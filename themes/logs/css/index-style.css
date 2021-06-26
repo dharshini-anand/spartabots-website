@@ -1,0 +1,945 @@
+
+
+/*-------------------------
+	Content Panels
+--------------------------*/
+.panel {
+    padding: 40px 0;
+    width: 100%;
+}
+
+.panel-title {
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 52.5px;
+    color: #53bf6b;
+    text-align: center;
+}
+
+.panel-desc {
+    font-size: 21px;
+    line-height: 26px;
+    color: #666;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 10px;
+}
+
+.panel-content {
+    padding: 0 10px;
+}
+
+.panel-content-text {
+    font-size: 17px;
+    line-height: 22px;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 10px;
+}
+
+.panel.g1 {
+    background: #fafafa;
+}
+.panel.g2 {
+    background: #f2f2f2;
+}
+.panel.g3 {
+    background: #f2f4f5
+}
+.panel.g4 {
+    background: #ebebeb
+}
+
+.panel.b1 {
+    background: #333333
+}
+
+/*-------------------------
+	Landing Splash
+--------------------------*/
+#landing-splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#landing-splash-over {
+    position: relative;
+    top: 500px;
+    z-index: 50;
+    margin-bottom: 430px;
+    background: white;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+}
+
+#landing-splash-background-outer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -5;
+    opacity: 1;
+    transition: opacity .2s ease-out;
+    background: url('//www.spartabots.org/uploads/2012/08/the-pits.jpg') no-repeat;
+    background-size: cover;
+}
+
+#landing-splash-background-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    opacity: 0.95;
+    background: -moz-radial-gradient(ellipse 60% 900px at center 800px, #5FD97A 0%,#53bf6b 100%);
+    background: -ms-radial-gradient(ellipse 60% 900px at center 800px, #5FD97A 0%,#53bf6b 100%);
+    background: -o-radial-gradient(ellipse 60% 900px at center 800px, #5FD97A 0%,#53bf6b 100%);
+    background: -webkit-radial-gradient(ellipse 60% 900px at center 800px, #5FD97A 0%,#53bf6b 100%);
+    background: radial-gradient(ellipse 60% 900px at center 800px, #5FD97A 0%,#53bf6b 100%);
+}
+/*
+@media (max-width: 765px) {
+    #landing-splash-background-outer {
+        opacity: 0;
+    }
+}*/
+
+/*-------------------------
+	Landing Page
+--------------------------*/
+
+#landing-logo {
+    max-width: 660px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+
+#landing-intro {
+    padding: 0;
+    position: relative;
+    background: url(//www.spartabots.org/images/mini-hero-bg4.png);
+}
+
+#landing-message {
+	font-family: 'Open Sans', Arial, sans-serif;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 300;
+    background: rgb(85,189,110);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 60px 60px;
+    min-height: 480px;
+}
+
+#landing-message .button3 {
+    font-size: 26px;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 5px 18px;
+	margin-bottom: 20px;
+}
+
+#landing-message-title {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 25px;
+}
+
+#landing-message-content {
+	font-size: 28px;
+	line-height: 38px;
+	margin-top: 30px;
+}
+
+@media (max-width: 662px) {
+    #landing-message {
+        padding: 10px 20px;
+		padding-bottom: 20px;
+		min-height: initial;
+    }
+
+    #landing-message-title {
+        padding-top: 25px;
+    }
+    #landing-message-content {
+        font-size: 24px;
+        line-height: 38px;
+    }
+}
+
+/* About */
+#about-panel {
+	background: #efefef;
+	padding: 0;
+	border-bottom: 1px solid transparent;
+}
+#about-panel-inner {
+	max-width: 950px;
+	width: 100%;
+	margin: 0 auto;
+}
+@media (max-width: 662px) {
+	#about-panel-inner {
+		width: 100%;
+	}
+}
+
+#about-main-card {
+	top: -40px;
+	position: relative;
+}
+#about-main-card-intro {
+	font-size: 24px;
+	color: #747678;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	line-height: 33.5px;
+}
+#about-main-card-btn-group {
+	text-align: justify;
+	padding: 10px 30px;
+}
+#about-main-card-btn-group:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+
+#about-main-card-btn-group a {
+	display: inline-block;
+	max-width: 23%;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	background: #279E44;
+	font-size: 16px;
+	transition: background .2s ease;
+}
+
+#about-main-card-btn-group a:hover {
+	background: #238F3D;
+}
+
+@media (max-width: 662px) {
+	#about-main-card {
+		top: 0;
+	}
+
+	#about-main-card-intro {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	#about-main-card-btn-group {
+		padding: 10px 12px;
+	}
+	#about-main-card-btn-group a {
+		max-width: 46%;
+		margin-bottom: 10px;
+	}
+}
+
+.about-panel-card {
+	background: white;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.about-panel-card:not(#about-main-card) {
+	margin-bottom: 40px;
+}
+
+.property:before, .property:after {content: '';display: table;}
+.property:after {clear: both;}
+
+
+.property-summary {
+	position: relative;
+	float: right;
+	width: 50%;
+	padding: 30px 40px;
+	color: rgb(51,51,51);
+	font-size: 17px;
+	line-height: 26px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	min-height: 300px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: rgb(68,68,68);
+}
+.property-summary h1, .property-summary h2, .property-summary h3 {
+	text-transform: uppercase;
+	font-size: 22px;
+	color: rgb(51,51,51);
+	margin: 0;
+}
+
+.property:nth-child(even) .property-summary, .property:nth-child(even) .property-thumb {
+	float: left;
+}
+.property:nth-child(even) .property-thumb, .property:nth-child(even) .property-thumb {
+	float: right;
+}
+
+.property .property-summary:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+}
+.property:nth-child(even) .property-summary:before { /* Left */
+	left: 100%;
+	border-left: 18.5px solid #fff; /* Right arrow */
+}
+.property:nth-child(odd) .property-summary:before { /* Right */
+	border-right: 18.5px solid #fff; /* Left arrow */
+	right: 100%;
+}
+
+.property .property-summary:after {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 18.5px solid #fff;
+	visibility: hidden;
+}
+
+.property-thumb {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+@media (max-width: 850px) {
+	.property-summary {
+		float: none;
+		width: 100%;
+	}
+	.property-thumb {
+		float: none;
+		width: 100%;
+	}
+
+	.property .property-summary:after {
+		visibility: visible;
+	}
+}
+
+#carousel-1-tabs {
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.carousel-1-tab {
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.carousel-1-tab:not(:last-child) {
+    padding-right: 10px;
+}
+
+.carousel-1-tab-inner {
+    height: 14px;
+    background: white;
+}
+
+.carousel-1-tab-inner:hover, .carousel-1-tab.selected .carousel-1-tab-inner {
+    background: #2BAD4A;
+}
+
+.carousel-1-tab-label {
+    display: none;
+    color: white;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 6px;
+    left: 0;
+    right: 0;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.carousel-1-tab.selected .carousel-1-tab-label {
+    display: block;
+}
+@media (max-width: 662px) {
+    .carousel-1-tab-label {
+        display: none !important;
+    }
+}
+
+/* Mission panel */
+#mission-panel {
+    background: url('//www.spartabots.org/images/world-map-gray.jpg') no-repeat center center;
+    padding-bottom: 100px;
+    min-height: 400px;
+    color: rgb(51,51,51);
+    font-size: 18px;
+    line-height: 23px;
+	box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.15);
+}
+#mission-panel .wrapper {
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* Green strip panel */
+#green-stripe-panel {
+    min-height: 160px;
+    background: rgba(43,173,74, 0.8);
+    padding: 50px 0;
+}
+#green-stripe-panel, #green-stripe-panel h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+#green-stripe-panel .wrapper {
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: white;
+    font-size: 17px;
+    line-height: 22px;
+}
+#green-stripe-panel section {
+    padding-bottom: 50px;
+}
+#green-stripe-panel section .fa {
+    font-size: 48px;
+    border: 1px solid white;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 35px;
+}
+#green-stripe-panel section:before, #green-stripe-panel section:after {
+    content: '';
+    display: table;
+}
+#green-stripe-panel section:after {
+    clear: both;
+}
+
+#index-whatisfirst-image {
+    min-height: 300px;
+    max-width: 300px;
+    background: url('//www.spartabots.org/images/FRC_FIRSTWhite.gif') no-repeat center 20%;
+    background-size: contain;
+    margin-top: 60px;
+}
+
+#index-whyjoin-image {
+    min-height: 300px;
+    max-width: 300px;
+    background: url('//www.spartabots.org/images/handshake-white-medium.png') no-repeat left 20%;
+    background-size: contain;
+    margin-top: 60px;
+}
+
+@media (max-width: 662px) {
+    #green-stripe-panel section .fl, #green-stripe-panel section .fr {
+        float: none !important;
+        width: 100% !important;
+    }
+}
+
+/* New member panel */
+#new-member-panel {
+    padding: 50px 20px;
+    background: url('//www.spartabots.org/images/mini-hero-bg.png');
+    color: rgb(51,51,51);
+    font-size: 17px;
+    line-height: 22px;
+}
+#new-member-l-col {
+    float: left;
+    width: 50%;
+}
+#new-member-r-col {
+    float: left;
+    width: 50%;
+}
+
+@media (max-width: 662px) {
+    #new-member-l-col {
+        width: 80%;
+        float: none;
+    }
+    #new-member-r-col {
+        display: none;
+    }
+}
+
+/* Quick links 2 panel */
+#quick-links-2 {
+    padding:50px 0
+}
+#quick-links-2-panel {
+    border-top: 1px solid #f4f4f4;
+    padding-top: 30px;
+}
+#quick-links-2:before {
+    content: '';
+    background: url('//www.spartabots.org/images/spartabots-logo-small.png') no-repeat;
+    background-size: 64px 64px;
+    background-position: center top;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: -32px;
+}
+#quick-links-2 .about-panel-3-col {
+    position: relative;
+    padding-bottom: 50px;
+    color: rgb(51,51,51);
+}
+#quick-links-2 .about-panel-3-col p {
+    font-size: 15px;
+}
+#quick-links-2 .about-panel-3-col:not(:first-child) {
+    border-left: 1px solid #f4f4f4;
+}
+
+#quick-links-2 .about-panel-3-col:before {
+    content: '';
+    background: linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    width: 105%;
+    height: 40px;
+    left: -2.5%;
+    position: absolute;
+    top: 0;
+}
+#quick-links-2 .about-panel-3-col:after {
+    content: '';
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    width: 105%;
+    height: 40px;
+    left: -2.5%;
+    position: absolute;
+    bottom: 0;
+}
+
+.about-panel-3-col {
+    width: 33.333%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding: 10px;
+}
+
+.about-panel-3-col h3 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 34px;
+    color: #24913E;
+    text-align: center;
+}
+
+.about-panel-3-col p {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    line-height: 28px;
+    min-height: 168px;
+}
+
+@media (max-width: 762px) {
+    #quick-links-2 .about-panel-3-col {
+        max-width: 350px;
+        margin: 0 auto;
+        border-left: 0 !important;
+    }
+
+    .about-panel-3-col p {
+        min-height: initial;
+        padding-bottom: 20px;
+    }
+}
+
+/* Get in touch panel */
+
+#get-in-touch-panel h1, #get-in-touch-panel h2, #get-in-touch-panel h3 {
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+
+#get-in-touch-panel ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#get-in-touch-panel ul li {
+	margin: 0;
+	display: block;
+	line-height: 28px;
+	float: left;
+}
+#get-in-touch-panel ul li:not(:last-child) {
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+#get-in-touch-panel ul li > span {
+	background: #e3e3e3;
+	display: inline-block;
+	color: rgb(51,51,51);
+	padding: 0 10px;
+}
+
+#get-in-touch-panel ul li > a {
+	display: inline-block;
+	color: rgb(51,51,51);
+	padding: 0 10px;
+	background: #efefef;
+}
+
+/* Quick links panel */
+
+#quick-links-panel-start {
+    background: #f0f0f0;
+    box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.15);
+}
+#quick-links-panel {
+}
+
+#quick-links-panel {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.quick-links-card {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: white;
+    overflow: hidden;
+    color: rgb(68,68,68);
+    font-size: 17px;
+    line-height: 22px;
+}
+.quick-links-card-full-bleed {
+    display: table;
+    height: 150px;
+    width: 101%;
+    background: #fdfdfd;
+    margin: 0;
+}
+.quick-links-card-full-bleed .fa {
+    display: table-cell;
+    font-size: 82px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+.quick-links-card-full-bleed-blue {
+    background: #83BAC6;
+}
+.quick-links-card-full-bleed-red {
+    background: #DD5D5C;
+
+}
+.quick-links-card-full-bleed-purple {
+    background: #C3B7D6;
+}
+.quick-links-card-full-bleed-orange {
+    background: #F9A448;
+}
+.quick-links-card-content {
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    min-height: 251px;
+}
+.quick-links-card h1, .quick-links-card h2, .quick-links-card h3 {
+    margin-top: 0;
+    color: rgb(68,68,68);
+}
+
+.quick-links-col {
+    width: 33.333%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.quick-links-col:first-child {
+    padding-left: 0;
+}
+.quick-links-col:last-child {
+    padding-right: 0;
+}
+
+@media (max-width: 990px) {
+    #quick-links-panel {
+        width: 95%;
+    }
+    .quick-links-col {
+        width: 100%;
+        float: none;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+
+    .quick-links-card-full-bleed {
+        width: 40%;
+        float: left;
+        min-height: 251px;
+    }
+
+    .quick-links-card-content {
+        width: 60%;
+        float: left;
+        padding: 20px;
+    }
+}
+@media (max-width: 662px) {
+    .quick-links-card-full-bleed {
+        width: 100%;
+        float: none;
+        min-height: initial;
+    }
+
+    .quick-links-card-content {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+}
+/*-------------------------
+	Landing Carousel
+--------------------------*/
+
+.carousel-panel {
+    position: relative;
+    min-height: 700px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: white;
+}
+
+.landing-bg-carousel-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.landing-bg-carousel .carousel-item {
+    height: 700px;
+}
+
+.landing-bg-carousel-wrapper img {
+    max-height: 700px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.landing-carousel-wrapper {
+    max-width: 310px;
+    background: white;
+    box-shadow: 2.5px 3px 12px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.landing-carousel-title {
+    color: #24913E;
+    margin: 0 20px;
+    display: block;
+    line-height: 56px;
+    font-size: 28px;
+}
+
+.landing-carousel {
+    height: 400px;
+    width: 288px;
+    padding: 2px;
+    margin: 0 10px;
+    margin-top: -10px;
+}
+
+.landing-carousel h2 {
+    margin-top: 0;
+    font: 28px/1.5 "Segoe UI SemiLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.landing-carousel p {
+    font-size: 17px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.landing-carousel .carousel-item .carousel-item-content {
+    width: 288px;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.fr .carousel-control-nav-bullet-area {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.landing-carousel-control {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.landing-carousel-control .carousel-control-nav-bullet {
+    background: #8E8E8E;
+    width: 13px;
+    height: 13px;
+    border-radius: 6.5px;
+    display: inline-block;
+    margin-left: 8px;
+    transition: background 200ms ease;
+    -webkit-transition: background 200ms ease;
+    -moz-transition: background 200ms ease;
+}
+
+.landing-carousel-control .carousel-control-nav-bullet.active {
+    background: #2BAD4A;
+}
+
+.landing-carousel-control .carousel-control-nav-next {
+    display: block;
+    background: #2BAD4A url('//www.spartabots.org/images/slide-arrow-right.png') no-repeat center center;
+    padding: 8px 13px;
+    background-size: 9px 19px;
+    width: 9px;
+    height: 19px;
+    margin-bottom: 25px;
+}
+
+@media all and (max-width: 662px) {
+    .landing-carousel-wrapper {
+        width: 100%;
+        max-width: none;
+        box-shadow: none;
+        border-top: 1px solid #e3e3e3;
+        margin-top: 20px;
+    }
+
+    .landing-carousel {
+        width: 100%;
+    }
+
+    .landing-carousel .carousel-item .carousel-item-content {
+        width: 100%;
+    }
+
+    .landing-bg-carousel-wrapper {
+        position: static;
+    }
+
+    .landing-bg-carousel-wrapper img {
+        margin-left: 0 !important;
+    }
+
+    .landing-bg-carousel-wrapper, .landing-bg-carousel .carousel-item {
+        height: 400px;
+    }
+
+    #FIRST-bg-carousel, #FIRST-bg-carousel-wrapper {
+        display: none;
+    }
+
+    #frc-panel-start {
+        padding-top: 0;
+        padding-bottom: 0;
+        min-height: 530px;
+    }
+
+    #FIRST-carousel-wrapper {
+        border-top: 0;
+        margin-top: 10px;
+    }
+}
+
+
+.landingGalleryNavButton {
+    width:30px;
+    border:0;
+    text-align: center;
+}
+
+.landingGalleryNavButton:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+.landingGalleryMain {
+    border:0;
+    padding: 0;
+}
+
+/*-------------------------
+	Panel
+--------------------------*/
+
+@media (max-width: 762px) {
+
+    #about-panel-l-col {
+        width: 100%;
+        float: none;
+    }
+
+    #about-panel-r-col {
+        width: 100%;
+        float: none;
+    }
+
+    .about-panel-3-col {
+        width: 100%;
+        float: none;
+    }
+
+}

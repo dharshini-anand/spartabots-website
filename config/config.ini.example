@@ -1,0 +1,84 @@
+; The URL of your blog. Include the http or https.
+site.url = ""
+
+; Blog info
+blog.title = "HTMLy"
+blog.tagline = "Just another HTMLy blog"
+blog.description = "Proudly powered by HTMLy, a databaseless blogging platform."
+blog.copyright = "(c) Your name."
+
+; Social account
+social.twitter = "https://twitter.com"
+social.facebook = "https://www.facebook.com"
+social.google = "https://plus.google.com"
+social.tumblr = "http://www.tumblr.com"
+
+; Custom menu link. 
+; See example below:
+; "Google->http://www.google.com|Wikipedia->http://www.wikipedia.org". 
+blog.menu = ""
+
+; Breadcrumb home text. Useful when installed on subfolder.
+breadcrumb.home = "Home"
+
+; Comment system. Choose "facebook", "disqus", or "disable".
+comment.system = "disable"
+
+;Facebook comments
+fb.appid = ""
+fb.num = "5"
+fb.color = "light"
+
+; Disqus comments
+disqus.shortname = ""
+
+; Google+ publisher
+google.publisher = ""
+
+; Google analytics
+google.analytics.id = ""
+
+; Pagination, RSS, and JSON
+posts.perpage = "5"
+tag.perpage = "10"
+archive.perpage = "10"
+search.perpage = "10"
+profile.perpage = "10"
+json.count = "10"
+
+; Related posts
+related.count = "4"
+
+; Author info on blog post. Set "true" or "false".
+author.info = "true"
+
+; Teaser type: set "trimmed" or "full".
+teaser.type = "trimmed"
+
+; Teaser char count
+teaser.char = "200"
+
+; Description char count
+description.char = "150"
+
+;RSS feed count
+rss.count = "10"
+
+;RSS feed description length. If left empty we will use full page.
+rss.char = ""
+
+; Enable image thumbnail on teaser, the options is "true" and "false". If set to "true", you can specify the default thumbnail also.
+img.thumbnail = "true"
+default.thumbnail = ""
+
+;Enable or disable jQuery, if Lightbox is "on" then this option ignored.
+jquery = "disable"
+
+; Lightbox inline image handling. This can slowdown your page load, especially when Disqus enabled. "on" or "off".
+lightbox = "off"
+
+; Set the theme here
+views.root = "themes/logs"
+
+; Framework config. No need to edit.
+views.layout = "layout"

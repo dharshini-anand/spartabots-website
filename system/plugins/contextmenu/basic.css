@@ -1,0 +1,51 @@
+#ctx-menu-container {
+	position:absolute;
+	top:0;
+	height:0px;
+}
+
+.ctx-menu, .ctx-submenu {
+    display:none;
+    color:black;
+    font: 15px/1.5 "Segoe UI SemiLight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position:absolute !important;
+    z-index:99999;
+    cursor:default;
+    min-width:165px;
+    padding:3px 0;
+    border: 1px solid #d6d6d6;
+    background: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ctx-menu hr {
+    border:0;
+    height:1px;
+    background:rgb(229,229,299);
+    margin:4px 0;
+}
+.ctx-item {
+    padding:5px;
+    padding-left:26px;
+    margin-left:-1px;
+    margin-right:-1px;
+    position:relative;
+}
+.ctx-item[disabled] {
+    color:rgb(135,135,135);
+}
+.ctx-item:not([disabled]):hover {
+    background:#D5E1F2;
+}
+.ctx-item:not([disabled]):hover > .ctx-submenu {
+    display:block;
+}
+.ctx-submenu {
+    left:100%;
+    top:0;
+    margin-top:-3px; /* Negative value of padding-top */
+}
